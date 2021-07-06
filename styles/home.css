@@ -1,1 +1,39 @@
-/* add home page styles here */
+#lavalamps {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: chartreuse;
+}
+#lavalamps li {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    padding: 10px;
+
+}
+
+#lavalamps li h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#lavalamps li img {
+    width: 50%;
+    height: 70%;
+}
+#lavalamps button {
+    background-color: black;
+    color: chartreuse;
+}
+#lavalamps h2 {
+    font-size: xx-small;
+}
+body {
+    background-color: black;
+}
+header{
+    height: 50px;
+    color: chartreuse;
+    font-size: larger;
+
+}
