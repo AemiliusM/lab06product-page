@@ -1,5 +1,5 @@
 import { findbyId, getTotal, renderTableRow, toUDS } from '../utils.js';
-import lavalamps from '../lamps.js';
+import lamps from '../data/lamps.js';
 import cart from '../data/cart.js';
 
 const tableBody = document.getElementById('table-body');

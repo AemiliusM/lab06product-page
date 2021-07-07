@@ -1,3 +1,4 @@
+
 const cart = [
     { id: green, qty: 2 },
     { id: purple, qty: 1 },
