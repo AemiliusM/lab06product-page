@@ -1,4 +1,4 @@
-import { findById, getTotal, renderTableRow } from '../utils.js';
+import { calcItemTotal, findById, getTotal, renderTableRow } from '../utils.js';
 import lamps from '../data/lamps.js';
 
 const test = QUnit.test;
@@ -53,4 +53,17 @@ test('getTotal should return the total price of all the items in the cart', expe
     const expected = 65;
     const actual = getTotal(data, cart);
     expect.deepEqual(expected, actual);
+});
+test('test to see if calcItemTotal is equal to total price of one qty of items', expect => {
+    const data = 
+        { id: 'red', qty: 2 };
+
+    const lamp = {
+        id: 'red',
+        price: 20
+    };
+
+    const expected = '$40.00';
+    const actual = calcItemTotal(lamp, data);
+    expect.equal(expected, actual);
 });

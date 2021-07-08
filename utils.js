@@ -33,7 +33,10 @@ export function renderTableRow(lampItem, cartItem) {
 
     return tr;
 }
-
+export function calcItemTotal(lampItem, cartItem){
+    const itemTotal = lampItem.price * cartItem.qty;
+    return toUDS(itemTotal);
+}
 export function getTotal(lamps, cart){
 
     let orderTotal = 0;

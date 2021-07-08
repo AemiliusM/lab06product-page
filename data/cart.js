@@ -1,6 +1,6 @@
 
 const cart = [
-    { id: green, qty: 2 },
-    { id: purple, qty: 1 },
+    { id: 'red', qty: 2 },
+    { id: 'green', qty: 1 },
 ];
 export default cart;
