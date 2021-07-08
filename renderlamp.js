@@ -7,22 +7,22 @@ export function renderLamp(lamp) {
     lampImg.src = `./assets/${lamp.image}`;
     lampImg.alt = lamp.name;
 
-    const lampSpan = document.createElement('span');
+    const lampSpan = document.createElement('h2');
     lampSpan.textContent = `$${lamp.price}`;
 
     const lampDesc = document.createElement('h2');
-    lampSpan.textContent = `${lamp.description}`;
+    lampDesc.textContent = `${lamp.description}`;
 
     const button = document.createElement('button');
     button.textContent = 'Add To Cart!';
+    button.value = lamp.id;
+    button.classList.add('add');
 
     lampLi.appendChild(lamph3);
     lampLi.appendChild(lampImg);
     lampLi.appendChild(lampSpan);
     lampLi.appendChild(lampDesc);
     lampLi.appendChild(button);
-
-    console.log(lampImg);
 
     return lampLi;
 }
