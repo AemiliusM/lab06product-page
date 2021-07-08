@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import lamps from './lamps.js';
+import lamps from './data/lamps.js';
 import { renderLamp } from './renderlamp.js';
 // initialize state
 const lampUl = document.getElementById('lavalamps');
