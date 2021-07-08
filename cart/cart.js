@@ -8,16 +8,21 @@ const tableBody = document.getElementById('table-body');
 function renderCart(){
     const cart = getCart();
     for (let item of cart) {
-        const fruit = find
+        const lamp = findById(lamps, item.id);
+        const tblrw = renderTableRow(lamp, item);
+        tableBody.appendChild(tblrw);
     }
+    if (cart.length === 0){
+        tableBody.innerHTML = '';
+    }
+    const totalDom = document.getElementById('order-total');
+    const total = getTotal(lamps, cart);
+    totalDom.textContent = toUDS(total);
 }
+renderCart();
 
-// for (let item of cart) {
-//     const lamp = findById(lamps, item.id);
-//     const tr = renderTableRow(lamp, item);
-//     tableBody.appendChild(tr);
-// }
-
-// const totalDom = document.getElementById('order-total');
-// const total = getTotal(lamps, cart);
-// totalDom.textContent = toUDS(total);
+const clearButton = document.getElementById('clear');
+clearButton.addEventListener('click', ()=>{
+    clearCart();
+    location.reload();
+});
