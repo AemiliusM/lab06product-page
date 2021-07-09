@@ -23,6 +23,6 @@ export function renderLamp(lamp) {
     lampLi.appendChild(lampSpan);
     lampLi.appendChild(lampDesc);
     lampLi.appendChild(button);
-
+    
     return lampLi;
 }

@@ -120,15 +120,17 @@ footer {
   }
   body {
   background:transparent;
+  opacity: 80%;
   }
   
   .lava{
     filter: url("#goo");
-    position:absolute;
+    position:fixed;
     height:100%;
     width:100%;
     top:0;
-    left:750px;
+    left:550px;
+    z-index: -5;
   }
   
   .blob{

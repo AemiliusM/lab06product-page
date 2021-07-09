@@ -40,10 +40,11 @@ const OrangeLamp = {
 };
 
 const lamps = [
+    RedLamp,
     BlueLamp,
     PurpleLamp,
     GreenLamp,
     OrangeLamp,
-    RedLamp
+    
 ];
 export default lamps;
