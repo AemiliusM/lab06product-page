@@ -7,9 +7,11 @@
 #lavalamps li {
     width: 200px;
     height: 200px;
-    border: 1px solid gray;
+    border: 3px dotted chartreuse;
     padding: 10px;
     border-radius: 10%;
+    margin-bottom: 20px;
+    margin-right: 20px;
 
 }
 
@@ -27,7 +29,7 @@
     color: chartreuse;
 }
 #lavalamps h2 {
-    font-size: xx-small;
+    font-size: .6rem;
 }
 body {
     background-color: black;
@@ -37,4 +39,16 @@ header{
     color: chartreuse;
     font-size: larger;
 
+}
+#clear{
+    background-color: black;
+    color: chartreuse;
+}
+#checkout{
+    background-color: black;
+    color: chartreuse;
+}
+a {
+    color: chartreuse;
+    justify-content: center;
 }
