@@ -5,6 +5,7 @@ export const CART = 'CARTY-B';
 export function getCart(){
     let stringCart = localStorage.getItem(CART) || '[]';
     const cart = JSON.parse(stringCart); 
+    console.log(stringCart);
     return cart;
 }
 
